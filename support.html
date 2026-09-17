@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Support — CTRMAX</title>
+<meta name="description" content="Get help with CTRMAX — the private personal finance and investment journal for iPhone. Email support, FAQ, and troubleshooting." />
+<meta name="theme-color" content="#0B1220" />
+<style>
+  :root {
+    --bg: #0B1220; --card: #121B30; --line: #1E2A44;
+    --text: #E7ECF5; --muted: #9AA6BF;
+    --accent: #6EA8FF; --accent-2: #8B7BFF;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: radial-gradient(1200px 600px at 80% -10%, rgba(110,168,255,0.18), transparent 60%),
+                radial-gradient(900px 500px at -10% 10%, rgba(139,123,255,0.18), transparent 60%),
+                var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased; line-height: 1.65;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  header {
+    position: sticky; top: 0; z-index: 50;
+    backdrop-filter: saturate(180%) blur(14px);
+    -webkit-backdrop-filter: saturate(180%) blur(14px);
+    background: rgba(11,18,32,0.7);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 24px; max-width: 1080px; margin: 0 auto;
+  }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: 0.4px; }
+  .brand-logo {
+    width: 30px; height: 30px; border-radius: 8px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    display: grid; place-items: center; color: #0B1220; font-weight: 800;
+    box-shadow: 0 6px 18px rgba(110,168,255,0.35);
+  }
+  .nav-links { display: flex; gap: 22px; }
+  .nav-links a { color: var(--muted); font-size: 14px; }
+  .nav-links a:hover { color: var(--text); text-decoration: none; }
+
+  .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+  .page { padding: 64px 0 56px; }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 6px 12px; border-radius: 999px;
+    background: rgba(110,168,255,0.08); color: var(--accent);
+    border: 1px solid rgba(110,168,255,0.25);
+    font-size: 12px; letter-spacing: 0.6px; text-transform: uppercase; font-weight: 600;
+  }
+  h1 {
+    font-size: clamp(30px, 4.4vw, 44px);
+    line-height: 1.1; letter-spacing: -0.02em;
+    margin: 16px 0 14px; font-weight: 800;
+  }
+  .lead { color: var(--muted); font-size: 17px; }
+
+  h2 { font-size: 22px; letter-spacing: -0.01em; margin: 36px 0 10px; }
+  p, li { color: var(--text); }
+  .muted { color: var(--muted); }
+  ul { padding-left: 22px; }
+  ul li { margin-bottom: 8px; }
+
+  .card {
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0)) , var(--card);
+    border: 1px solid var(--line); border-radius: 18px;
+    padding: 22px;
+  }
+  .grid { display: grid; gap: 18px; }
+  .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  @media (max-width: 820px) { .grid-2 { grid-template-columns: 1fr; } }
+
+  .email-card {
+    background: linear-gradient(135deg, rgba(110,168,255,0.12), rgba(139,123,255,0.12));
+    border: 1px solid rgba(110,168,255,0.3);
+    border-radius: 20px; padding: 28px;
+  }
+  .email-card h3 { margin: 0 0 6px; font-size: 22px; }
+  .email-card p { margin: 0 0 18px; color: var(--muted); }
+  .email-card a.btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--text); color: #0B1220;
+    padding: 12px 18px; border-radius: 12px; font-weight: 700;
+  }
+  .email-card a.btn:hover { text-decoration: none; transform: translateY(-1px); }
+
+  .faq details {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 14px; padding: 16px 18px; margin-bottom: 10px;
+  }
+  .faq summary {
+    cursor: pointer; font-weight: 600; color: var(--text);
+    list-style: none; display: flex; justify-content: space-between; align-items: center;
+  }
+  .faq summary::after { content: "+"; color: var(--accent); font-size: 22px; line-height: 1; }
+  .faq details[open] summary::after { content: "−"; }
+  .faq p { color: var(--muted); margin: 10px 0 0; }
+
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 36px 0 56px; color: var(--muted); font-size: 14px;
+  }
+  .foot { display: flex; flex-wrap: wrap; gap: 18px; justify-content: space-between; }
+  .foot a { color: var(--muted); }
+  .foot a:hover { color: var(--text); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">
+      <div class="brand-logo">C</div>
+      <span>CTRMAX</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <div class="container">
+    <span class="eyebrow">Support</span>
+    <h1>We’re here to help.</h1>
+    <p class="lead">
+      CTRMAX is designed to be calm, fast, and self-explanatory — but if you ever need a hand,
+      we’d love to hear from you. Email is the fastest and best way to reach the team.
+    </p>
+
+    <div class="email-card" style="margin-top: 26px;">
+      <h3>Email support</h3>
+      <p>Tell us what’s going on, what device and iOS version you’re using, and — if it’s easy — a screenshot. We’ll get back to you as soon as we can.</p>
+      <a class="btn" href="mailto:karlawsokunevajob68@gmail.com">✉️ karlawsokunevajob68@gmail.com</a>
+    </div>
+
+    <h2>What to include in your message</h2>
+    <p>To help us help you quickly, please include the following where relevant:</p>
+    <ul>
+      <li>The model of your iPhone (for example, iPhone 15 Pro) and your iOS version (Settings → General → About).</li>
+      <li>The version of CTRMAX you are running (Settings → CTRMAX).</li>
+      <li>A short description of the problem and the steps that lead to it.</li>
+      <li>A screenshot or short screen recording, if it’s a visual issue.</li>
+    </ul>
+
+    <h2>Frequently asked questions</h2>
+    <div class="faq">
+      <details>
+        <summary>I lost my data after reinstalling CTRMAX. Can you restore it?</summary>
+        <p>CTRMAX does not store your data on any server, so we have nothing to restore from. If you have an iTunes or iCloud device backup taken while CTRMAX was installed, restoring that backup to your device may bring your journal back. We also recommend using the in-app CSV export regularly as a personal backup.</p>
+      </details>
+      <details>
+        <summary>How do I export my data?</summary>
+        <p>Open CTRMAX → Settings → Export. Choose CSV, pick a destination (for example, the Files app, Mail, or another share-sheet target), and confirm. The file is generated locally and handed to the share sheet — nothing is sent anywhere automatically.</p>
+      </details>
+      <details>
+        <summary>Can I sync CTRMAX across multiple iPhones or iPads?</summary>
+        <p>CTRMAX is currently a single-device journal. Each device holds its own data. If you switch devices, use the in-app export to move your journal.</p>
+      </details>
+      <details>
+        <summary>Does CTRMAX connect to my bank or brokerage?</summary>
+        <p>No. CTRMAX is a journaling tool. It does not connect to financial institutions, does not fetch live market prices, and does not execute trades.</p>
+      </details>
+      <details>
+        <summary>How do I delete my data?</summary>
+        <p>Delete CTRMAX from your device. All journal data stored by the App is removed with it. If you previously exported a CSV, remember to delete that file from wherever you saved it.</p>
+      </details>
+      <details>
+        <summary>Does CTRMAX show investment advice?</summary>
+        <p>No. CTRMAX is a private journal for the numbers you record. Nothing in the App constitutes investment, tax, legal, or financial advice.</p>
+      </details>
+      <details>
+        <summary>I have a feature idea. Where do I send it?</summary>
+        <p>We love hearing from users. Send feature ideas to <a href="mailto:karlawsokunevajob68@gmail.com">karlawsokunevajob68@gmail.com</a> with “Feature idea” in the subject line.</p>
+      </details>
+    </div>
+
+    <h2>Response time</h2>
+    <p>
+      We are a small team and we read every message. Most support emails receive a personal reply
+      within a few business days. If your issue is preventing you from using the App, please mark
+      your message “Urgent” in the subject line.
+    </p>
+
+    <h2>Helpful links</h2>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3 style="margin-top:0;">Privacy Policy</h3>
+        <p>How CTRMAX handles — and refuses to handle — your data.</p>
+        <p><a href="privacy.html">Read the Privacy Policy →</a></p>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0;">Terms of Use</h3>
+        <p>The rules of the road for using CTRMAX.</p>
+        <p><a href="terms.html">Read the Terms of Use →</a></p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container foot">
+    <div>© <span id="year"></span> CTRMAX. All rights reserved.</div>
+    <div style="display:flex; gap:18px; flex-wrap:wrap;">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="mailto:karlawsokunevajob68@gmail.com">karlawsokunevajob68@gmail.com</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
